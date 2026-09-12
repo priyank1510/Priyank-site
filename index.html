@@ -4,17 +4,108 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#05060c" />
-    <title>Portfolio</title>
-    <meta name="description" content="Personal portfolio" />
+
+    <!--
+      ┌─────────────────────────────────────────────────────────────────────┐
+      │ SITE URL — update the four absolute URLs below (canonical, og:url,  │
+      │ og:image, twitter:image) once the real domain is live.              │
+      │ Currently assumes the default Netlify subdomain for this repo.      │
+      │ Link previews on LinkedIn/X/iMessage need ABSOLUTE urls to work.    │
+      └─────────────────────────────────────────────────────────────────────┘
+    -->
+
+    <title>Priyank Patel — Software &amp; ML Engineer</title>
+    <meta
+      name="description"
+      content="Priyank Patel is a software and ML engineer in Boston building production machine learning: data pipelines, FastAPI and Spring Boot services, and evaluation harnesses. MS Computer Science, Northeastern University, 2026."
+    />
+    <link rel="canonical" href="https://priyank-site.netlify.app/" />
+    <meta name="author" content="Priyank Patel" />
+
+    <!-- Open Graph (LinkedIn, Facebook, Slack, iMessage) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Priyank Patel" />
+    <meta property="og:title" content="Priyank Patel — Software &amp; ML Engineer" />
+    <meta
+      property="og:description"
+      content="Production ML and backend engineering: pipelines, APIs, and evaluation harnesses. MS CS at Northeastern, graduating May 2026."
+    />
+    <meta property="og:url" content="https://priyank-site.netlify.app/" />
+    <meta property="og:image" content="https://priyank-site.netlify.app/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Priyank Patel — Software and ML Engineer" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- X / Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Priyank Patel — Software &amp; ML Engineer" />
+    <meta
+      name="twitter:description"
+      content="Production ML and backend engineering: pipelines, APIs, and evaluation harnesses. MS CS at Northeastern, graduating May 2026."
+    />
+    <meta name="twitter:image" content="https://priyank-site.netlify.app/og.png" />
+
+    <!-- Icons -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Structured data: tells Google this page is a person, not a company. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Priyank Patel",
+        "jobTitle": "Software & ML Engineer",
+        "url": "https://priyank-site.netlify.app/",
+        "email": "mailto:patel.priyankk@northeastern.edu",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Boston",
+          "addressRegion": "MA",
+          "addressCountry": "US"
+        },
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Northeastern University"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Gujarat Technological University"
+          }
+        ],
+        "knowsAbout": [
+          "Machine Learning",
+          "Backend Engineering",
+          "Python",
+          "Java",
+          "Retrieval-Augmented Generation",
+          "MLOps"
+        ],
+        "sameAs": [
+          "https://github.com/priyank1510",
+          "https://linkedin.com/in/priyankk"
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      Priyank Patel — Software &amp; ML Engineer, Boston MA. This portfolio needs
+      JavaScript; my résumé is at /Priyank_Patel_Resume.pdf and my email is
+      patel.priyankk@northeastern.edu.
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
